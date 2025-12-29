@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { Toaster } from "sonner"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -41,6 +42,12 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <ThemeProvider>
           {children}
+          <Toaster 
+            position="bottom-right" 
+            richColors 
+            closeButton
+            theme="system"
+          />
           <Analytics />
         </ThemeProvider>
       </body>

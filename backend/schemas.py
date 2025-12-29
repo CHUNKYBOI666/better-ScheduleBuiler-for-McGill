@@ -21,3 +21,12 @@ class CourseResponse(CourseBase):
     class Config:
         from_attributes = True
 
+
+class McGillCourseInfo(BaseModel):
+    course_code: str
+    title: Optional[str] = None
+    description: Optional[str] = None
+    prerequisites: Optional[str] = None
+    credits: Optional[float] = None
+    url: Optional[str] = None
+
