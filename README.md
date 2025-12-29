@@ -1,23 +1,34 @@
 # ScheduleBuilder for McGill
 
-Course information and scheduling system for McGill University using FastAPI and Next.js.
+A course scheduling and grade tracking system for McGill University.
 
-## Setup
+## Quick Start
 
-### Backend (Python)
-
+### Backend
 ```bash
 cd backend
 pip install -r requirements.txt
 python main.py
 ```
+Backend runs on `http://localhost:8000`
 
-### Frontend (Next.js)
-
+### Frontend
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+Frontend runs on `http://localhost:3000`
 
-The frontend runs on `http://localhost:3000` (or another port if 3000 is taken) and connects to the Python backend on `http://localhost:8000`.
+## Features
+
+- 🔍 Search courses from McGill's database
+- 📅 Visual schedule builder with conflict detection
+- 📝 Section selection with real-time preview
+- 📊 Grade tracking and analytics
+- 💾 Persistent storage with localStorage
+
+## API Docs
+
+- Swagger UI: http://localhost:8000/docs
+- ReDoc: http://localhost:8000/redoc
